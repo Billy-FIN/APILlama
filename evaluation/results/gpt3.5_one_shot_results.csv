@@ -1,0 +1,118 @@
+API,Endpoint_Name,URL,Semantic_Similarity:Name&Description,Method,Required_Param,Optional_Param,Notes
+34,Get Status Code Image,False,,,,,This endpoint does not match its URL
+33,Convert JSON to JSONP,True,0.9551233053207397,True,0.9784762263298035,1.0,
+32,Get Multiple Memes from Subreddit,True,0.9046517610549927,True,0.985884353518486,1.0,
+32,Get Meme from Subreddit,True,0.9294108152389526,True,0.9780308604240417,1.0,
+32,Get Multiple Memes,True,0.9396300315856934,True,0.9850912392139435,1.0,
+32,Get Random Meme,True,0.9022774696350098,True,1.0,1.0,
+31,Generate Placeholder Text,False,,,,,This endpoint does not match its URL
+30,Missing,False,,,,,This endpoint does not match its URL
+29,Get Organisation,False,,,,,This endpoint does not match its URL
+29,Get Organisations,True,0.9602260589599609,True,1.0,1.0,
+29,Get Contributions Meta,True,0.8365530967712402,True,1.0,1.0,
+29,Get Contributions,True,0.9596757888793945,True,1.0,1.0,
+29,Get Projects,True,0.9451084136962891,True,1.0,1.0,
+29,Get User,False,,,,,This endpoint does not match its URL
+29,Get Users,True,0.9660911560058594,True,1.0,0.0,
+28,Automatic Mode,True,0.8148878216743469,True,1.0,1.0,
+28,Manual Mode,True,0.9073954820632935,True,0.980628490447998,1.0000000596046448,
+27,Generate Chart,True,,,,,IoU shows that the structure of this endpoint is not the same.
+26,List All Asteroids,True,0.9390523433685303,True,1.0,0.0,
+25,Get Betting Odds,False,,,,,This endpoint does not match its URL
+25,Get Leaders,False,,,,,This endpoint does not match its URL
+25,Get Team Standings,False,,,,,This endpoint does not match its URL
+25,Get All Active Players,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get Box Scores,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get Live Box Scores,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get All Advanced Stats,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get Averages,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get All Stats,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get a Specific Game,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get All Games,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get a Specific Player,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get All Players,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get a Specific Team,True,,,,,IoU shows that the structure of this endpoint is not the same.
+25,Get All Teams,True,,,,,IoU shows that the structure of this endpoint is not the same.
+24,Get COVID-19 Cases for a Specific Country,True,,,,,IoU shows that the structure of this endpoint is not the same.
+24,List All COVID-19 Cases Per Country,True,,,,,IoU shows that the structure of this endpoint is not the same.
+23,Plain Text Response,True,0.7093321084976196,True,0.0,0.0,
+23,JSON Response,True,0.6952188014984131,True,0.0,0.0,
+23,XML Response,True,0.6975517272949219,True,0.0,0.0,
+23,Contains Profanity,True,0.8689160346984863,True,0.0,1.0,
+22,Get Rates Data,True,0.8567601442337036,True,0.9544968008995056,1.0,
+22,Get Supported Currency Pairs,True,0.7676780819892883,True,1.0,1.0,
+21,Get Bear Image,True,0.8917943239212036,True,0.861000195145607,0.0,
+20,Batch Gender Prediction,True,0.7001159191131592,False,0.0,0.0,
+20,Check Gender of a Name,True,0.8771717548370361,True,0.0,0.0,
+19,Get Card by ID,True,,,,,IoU shows that the structure of this endpoint is not the same.
+19,Get All Cards,True,,,,,IoU shows that the structure of this endpoint is not the same.
+18,Top By Fans,True,,,,,IoU shows that the structure of this endpoint is not the same.
+18,Top By Interest,True,,,,,IoU shows that the structure of this endpoint is not the same.
+18,Latest,True,,,,,IoU shows that the structure of this endpoint is not the same.
+18,Search,False,,,,,This endpoint does not match its URL
+18,Phone Specifications,False,,,,,This endpoint does not match its URL
+18,List Phones,True,,,,,IoU shows that the structure of this endpoint is not the same.
+18,List Brands,True,,,,,IoU shows that the structure of this endpoint is not the same.
+17,Search Makeup Products,True,0.9839542508125305,True,1.0,0.0,
+16,Get Votes,True,,,,,IoU shows that the structure of this endpoint is not the same.
+16,Get Parties,True,,,,,IoU shows that the structure of this endpoint is not the same.
+16,Get Metadata,True,,,,,IoU shows that the structure of this endpoint is not the same.
+16,Get Election Data,True,,,,,IoU shows that the structure of this endpoint is not the same.
+15,Get Route,False,,,,,This endpoint does not match its URL
+15,Get Stop,False,,,,,This endpoint does not match its URL
+15,Get Operator,False,,,,,This endpoint does not match its URL
+15,Get Feed,False,,,,,This endpoint does not match its URL
+14,Get List of Shows,False,,,,,This endpoint does not match its URL
+14,Get Random Quote from Show,False,,,,,This endpoint does not match its URL
+14,Get Random Quote (Censored),False,,,,,This endpoint does not match its URL
+14,Get Random Quote,False,,,,,This endpoint does not match its URL
+13,Standings,True,,,,,IoU shows that the structure of this endpoint is not the same.
+13,Seasons Available,True,,,,,IoU shows that the structure of this endpoint is not the same.
+13,League Detail,True,,,,,IoU shows that the structure of this endpoint is not the same.
+13,All Leagues Available,True,,,,,IoU shows that the structure of this endpoint is not the same.
+12,Get Word Definitions,True,0.89400315284729,True,0.0,1.0,
+11,WakaTime Stats Card,True,0.9497612714767456,True,0.0,0.0,
+11,GitHub Extra Pins,False,,,,,This endpoint does not match its URL
+11,GitHub Gist Pins,False,,,,,This endpoint does not match its URL
+11,Top Languages Card,True,0.8947683572769165,True,0.0,0.0,
+11,GitHub Stats Card,True,0.912219226360321,True,0.0,0.0,
+10,Get Image Details by Seed,False,,,,,This endpoint does not match its URL
+10,Get Image Details by ID,True,0.970805287361145,True,0.9709540903568268,1.0,
+10,List Images,True,0.9658081531524658,True,1.0,0.9332428276538849,
+10,Get Blurred Image,False,,,,,This endpoint does not match its URL
+10,Get Grayscale Image,False,,,,,This endpoint does not match its URL
+10,Get Static Random Image,False,,,,,This endpoint does not match its URL
+10,Get Specific Image,True,0.9832444190979004,True,0.9768983920415242,1.0,
+10,Get Square Image,False,,,,,This endpoint does not match its URL
+10,Get Random Image,True,0.9810284972190857,True,0.979870542883873,1.0,
+9,Get Bulk Data,False,,,,,This endpoint does not match its URL
+9,Search Cards,False,,,,,This endpoint does not match its URL
+9,Get Card Data,False,,,,,This endpoint does not match its URL
+8,List Available Models,True,0.9059332609176636,True,1.0,1.0,
+8,Get Color Suggestions,True,0.8013993501663208,True,0.47882241010665894,1.0,
+8,Get Random Color Palette,True,0.961124062538147,True,0.9836130738258362,1.0,
+7,Request Colors Data,True,,,,,IoU shows that the structure of this endpoint is not the same.
+6,Get Phishing Data by Score and TLD,False,,,,,This endpoint does not match its URL
+6,Get Phishing Data by Title or URL with ID Sorted,False,,,,,This endpoint does not match its URL
+6,Get Phishing Data by URL with ID Sorted,False,,,,,This endpoint does not match its URL
+6,Get Phishing Data by Title with ID Sorted,False,,,,,This endpoint does not match its URL
+6,Get Phishing Data Sorted by Date,False,,,,,This endpoint does not match its URL
+6,Get Phishing Data Sorted by ID,False,,,,,This endpoint does not match its URL
+6,Get Phishing Data by TLD,False,,,,,This endpoint does not match its URL
+6,Get Phishing Data by Country Code,False,,,,,This endpoint does not match its URL
+6,Get Phishing Data by IP,False,,,,,This endpoint does not match its URL
+6,Get Phishing Data by ASN,False,,,,,This endpoint does not match its URL
+6,Get Phishing Data by ID,False,,,,,This endpoint does not match its URL
+5,Get Stoicism Quote,True,0.9507526159286499,True,1.0,1.0,
+4,Get All Contributors,False,,,,,This endpoint does not match its URL
+4,Get Contributions by User,False,,,,,This endpoint does not match its URL
+4,Get Recipe Slugs,False,,,,,This endpoint does not match its URL
+4,Get Contributors for Recipe,False,,,,,This endpoint does not match its URL
+4,Get Random Taco,False,,,,,This endpoint does not match its URL
+3,Get Supported Color Name Lists,True,0.9632902145385742,True,1.0,1.0,
+3,Get Color Names,True,0.8881081342697144,True,0.9062754511833191,0.9530052095651627,
+2,Get Cat Facts in Different Language,True,0.847220778465271,True,1.0,0.8902763724327087,
+2,Get Specific Cat Fact,True,0.8431081771850586,True,1.0,0.8431935906410217,
+2,Get Multiple Cat Facts,True,0.9321213960647583,True,1.0,0.7880471348762512,
+2,Get Random Cat Fact,True,0.9626375436782837,True,1.0,1.0,
+1,Get IP Information,True,,,,,IoU shows that the structure of this endpoint is not the same.
