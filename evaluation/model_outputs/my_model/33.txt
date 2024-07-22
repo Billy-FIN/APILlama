@@ -1,4 +1,4 @@
-
+{
 "title": "JSON 2 JSONP Conversion Service",
     "endpoints": [
         {
