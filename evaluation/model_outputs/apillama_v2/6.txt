@@ -1,0 +1,126 @@
+{
+
+    "title": "PhishStats API Documentation",
+    "endpoints": [
+        {
+            "name": "Phishing Statistics",
+            "description": "Overall phishing statistics",
+            "method": "GET",
+            "url": "https://phishstats.info:2096/api/phishing",
+            "headers": [],
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "_p",
+                    "type": "integer",
+                    "description": "The page number of the results to return. Defaults to 1.",
+                    "default": "1",
+                    "example": "2"
+                },
+                {
+                    "name": "_size",
+                    "type": "integer",
+                    "description": "The number of records to return. Defaults to 20.",
+                    "default": "20",
+                    "example": "100"
+                }
+            ]
+        },
+        {
+            "name": "Search for specific IP, host, domain or full URL",
+            "description": "Search for specific IP, host, domain or full URL",
+            "method": "GET",
+            "url": "https://phishstats.info:2096/api/phishing",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "ip",
+                    "type": "string",
+                    "description": "IP address to search for.",
+                    "default": null,
+                    "example": "148.228.16.3"
+                },
+                {
+                    "name": "host",
+                    "type": "string",
+                    "description": "Host to search for.",
+                    "default": null,
+                    "example": "phishstats.info"
+                },
+                {
+                    "name": "domain",
+                    "type": "string",
+                    "description": "Domain to search for.",
+                    "default": null,
+                    "example": "phishstats.info"
+                },
+                {
+                    "name": "url",
+                    "type": "string",
+                    "description": "Full URL to search for.",
+                    "default": null,
+                    "example": "https://phishstats.info"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "_where",
+                    "type": "string",
+                    "description": "The search query using Lucene-like syntax.",
+                    "default": null,
+                    "example": "id,eq,3296584"
+                },
+                {
+                    "name": "_sort",
+                    "type": "string",
+                    "description": "Sort the results by the specified field. For example, -id for descending order.",
+                    "default": null,
+                    "example": "-id"
+                }
+            ]
+        },
+        {
+            "name": "CSV Feed",
+            "description": "Updated every 90 minutes with phishing URLs from the past 30 days.",
+            "method": "GET",
+            "url": "https://phishstats.info:2096/api/csv",
+            "headers": [],
+            "required_parameters": [],
+            "optional_parameters": []
+        },
+        {
+            "name": "Go API",
+            "description": "Allows you to perform complex queries and returns a JSON file with the columns you want.",
+            "method": "GET",
+            "url": "https://phishstats.info:2096/api/go",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "string",
+                    "description": "The search query using Lucene-like syntax.",
+                    "default": null,
+                    "example": "id,eq,3296584"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "columns",
+                    "type": "array",
+                    "description": "The columns you want to return.",
+                    "default": null,
+                    "example": "['id', 'date', 'phishscore', 'url', 'ip']"
+                }
+            ]
+        },
+        {
+            "name": "Database full access",
+            "description": "No coding skills required.",
+            "method": "GET",
+            "url": "https://phishstats.info:2096/api/db",
+            "headers": [],
+            "required_parameters": [],
+            "optional_parameters": []
+        }
+    ]
+}

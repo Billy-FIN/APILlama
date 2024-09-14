@@ -1,0 +1,49 @@
+{
+  "word": "hello",
+  "phonetic": "hÉËlÉÊ",
+  "phonetics": [
+    {
+      "text": "hÉËlÉÊ",
+      "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/hello--_gb_1.mp3"
+    },
+    {
+      "text": "hÉËlÉÊ"
+    }
+  ],
+  "origin": "early 19th century: variant of earlier hollo; related to holla.",
+  "meanings": [
+    {
+      "partOfSpeech": "exclamation",
+      "definitions": [
+        {
+          "definition": "used as a greeting or to begin a phone conversation.",
+          "example": "hello there, Katie!",
+          "synonyms": [],
+          "antonyms": []
+        }
+      ]
+    },
+    {
+      "partOfSpeech": "noun",
+      "definitions": [
+        {
+          "definition": "an utterance of âhelloâ; a greeting.",
+          "example": "she was getting polite nods and hellos from people",
+          "synonyms": [],
+          "antonyms": []
+        }
+      ]
+    },
+    {
+      "partOfSpeech": "verb",
+      "definitions": [
+        {
+          "definition": "say or shout âhelloâ.",
+          "example": "I pressed the phone button and helloed",
+          "synonyms": [],
+          "antonyms": []
+        }
+      ]
+    }
+  ]
+}

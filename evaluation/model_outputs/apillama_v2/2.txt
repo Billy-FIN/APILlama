@@ -1,0 +1,36 @@
+{
+
+    "title": "MeowFacts API",
+    "description": "A simple API that returns a random fact about cats on a GET request",
+    "endpoints": [
+        {
+            "name": "Get a random fact about cats",
+            "description": "Returns a random fact about cats",
+            "method": "GET",
+            "url": "https://meowfacts.herokuapp.com/",
+            "headers": [],
+            "required_parameters": [],
+            "optional_parameters": [
+                {
+                    "name": "count",
+                    "type": "integer",
+                    "description": "Number of facts to return",
+                    "default": 1,
+                    "example": 3
+                },
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "ID of the fact to return",
+                    "default": null
+                },
+                {
+                    "name": "lang",
+                    "type": "string",
+                    "description": "Language of the response",
+                    "default": "en-us"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+
+  "name": "PurgoMalum",
+  "description": "A free, RESTful web service for filtering and removing content of profanity, obscenity and other unwanted text.",
+  "url": "https://www.purgomalum.com/service/",
+  "parameters": [
+    {
+      "name": "text",
+      "required": true,
+      "description": "Input text to be processed."
+    },
+    {
+      "name": "add",
+      "required": false,
+      "description": "A comma separated list of words to be added to the profanity list. Accepts letters, numbers, underscores (_) and commas (,). Accepts up to 10 words (or 200 maximum characters in length)."
+    },
+    {
+      "name": "fill_text",
+      "required": false,
+      "description": "Text used to replace any words matching the profanity list. Accepts letters, numbers, underscores (_) tildes (~), exclamation points (!), dashes/hyphens (-), equal signs (=), pipes (|), single quotes ('), double quotes (\"), asterisks (*), open and closed curly brackets ({ }), square brackets ([ ]) and parentheses ( ). Maximum length of 20 characters."
+    },
+    {
+      "name": "fill_char",
+      "required": false,
+      "description": "Single character used to replace any words matching the profanity list. Fills designated character to length of word replaced. Accepts underscore (_) tilde (~), dash/hyphen (-), equal sign (=), pipe (|) and asterisk (*)."
+    }
+  ],
+  "response_types": [
+    {
+      "name": "containsprofanity",
+      "description": "Returns 'true' if input text contains words matching profanity list. If no matches are found, returns 'false'."
+    },
+    {
+      "name": "xml",
+      "description": "Returns processed input text as XML."
+    },
+    {
+      "name": "json",
+      "description": "Returns processed input text as JSON."
+    },
+    {
+      "name": "plain",
+      "description": "Returns processed input text as plain text."
+    }
+  ]
+}

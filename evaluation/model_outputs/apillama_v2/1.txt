@@ -1,0 +1,16 @@
+{
+
+    "title": "JSON API",
+    "description": "Make automated requests to the site using the API",
+    "endpoints": [
+        {
+            "name": "Get IP Information",
+            "description": "Get information about an IP address",
+            "method": "GET",
+            "url": "https://api.myip.com",
+            "headers": [],
+            "required_parameters": [],
+            "optional_parameters": []
+        }
+    ]
+}

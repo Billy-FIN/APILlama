@@ -1,0 +1,59 @@
+
+
+Scryfall is a platform that provides a REST-like API for ingesting Magic: The Gathering card data programmatically. The API exposes information available on the regular site in easy-to-consume formats.
+
+**API Details**
+
+*   The API is available at `https://api.scryfall.com`.
+*   API requests are only served over HTTPS, using TLS 1.2 or better.
+*   Requests will not be honored over plaintext HTTP.
+*   The API uses UTF-8 character encoding for all responses.
+*   Many fields will include characters that are not in the ASCII range.
+*   Rate limits and good citizenship:
+    *   Insert 50-100 milliseconds of delay between requests to the server at `api.scryfall.com` (i.e., 10 requests per second on average).
+    *   Submitting excessive requests to the server may result in a HTTP 429 Too Many Requests status code.
+    *   Continuing to overload the API after this point may result in a temporary or permanent ban of your IP address.
+    *   The file origins used by the API, located at `*.scryfall.io`, do not have these rate limits.
+    *   We encourage you to cache the data you download from Scryfall or process it locally in your own database, at least for 24 hours.
+
+**API Endpoints**
+
+*   The API has several endpoints, including:
+    *   `Search Cards`: Perform advanced search queries to find cards by name, type, release date, legality, and more.
+    *   `Card Objects`: Retrieve card data in various formats.
+    *   `Card Imagery`: Retrieve card images in various formats.
+    *   `Bulk Data`: Download Scryfall's entire database in compressed files.
+
+**Using the API**
+
+*   To use the API, you must first create an account on the Scryfall website and obtain an API key.
+*   You can then use the API key to make requests to the API.
+*   The API uses a REST-like syntax, with GET, POST, and other HTTP methods available.
+
+**API Changelog**
+
+*   The API is constantly being updated with new features and improvements.
+*   The changelog is available on the Scryfall website.
+
+**Terms of Service**
+
+*   Scryfall provides its data and images free of charge for the primary purpose of creating additional Magic software, performing research, or creating community content.
+*   You must adhere to the following guidelines when using Scryfall data and images:
+    *   You may not use Scryfall logos or use the Scryfall name in a way that implies Scryfall has endorsed you, your work, or your product.
+    *   You may not require anyone to make payments, take surveys, agree to subscriptions, rate your content, or create accounts in exchange for access to Scryfall data.
+    *   You may not use Scryfall data to create new games, or imply the information and images are from any other game besides Magic: The Gathering.
+*   When using images from Scryfall, you must adhere to the following guidelines:
+    *   Do not cover, crop, or clip off the copyright or artist name on card images.
+    *   Do not distort, skew, or stretch card images.
+    *   Do not blur, sharpen, desaturate, or color-shift card images.
+    *   Do not add your own watermarks, stamps, or logos to card images.
+    *   Do not place card images in a way that implies someone other than Wizards of the Coast created the card or that it is from another game besides Magic: The Gathering.
+
+**Additional Resources**
+
+*   Scryfall Slack and Discord bots are available for community support.
+*   The Scryfall Blog is available for updates and news.
+*   The Scryfall Tagger is a tool for creating links to Scryfall cards.
+*   The Game Bolas website is a community-driven website for Magic: The Gathering.
+*   Scryfall Patreon is a platform for supporting the project.
+*   Scryfall is not produced by or endorsed by Wizards of the Coast or other services.

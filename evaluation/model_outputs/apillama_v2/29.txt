@@ -1,0 +1,40 @@
+This is a documentation for the 24 Pull Requests API, a platform for tracking and managing pull requests on GitHub. The API provides various endpoints for fetching data about users, pull requests, and organisations. Here's a summary of the API's features:
+
+### Endpoints
+
+The API has several endpoints for different operations:
+
+*   `users.json`: Fetches a list of all users who have signed up to the site, ordered by the number of contributions they've made in December.
+*   `users/{id}.json`: Fetches information for a specific user.
+*   `projects.json`: Fetches a list of all suggested projects on the site, ordered alphabetically.
+*   `pull_requests.json`: Fetches a list of all contributions made by users in December, ordered by the newest first.
+*   `pull_requests/meta.json`: Fetches information about all contributions made in the year, including the total count and total pages.
+*   `organisations.json`: Fetches a list of all organisations that have signed up to the site, along with their users.
+*   `organisations/{id}.json`: Fetches information for a specific organisation.
+
+### Parameters
+
+The API uses various parameters to filter and sort the data. Some of these parameters include:
+
+*   `q`: A search query using Lucene-like syntax.
+*   `page`: The page number for paginated results (default is 1).
+
+### JSON Callbacks
+
+The API supports JSON callbacks, which allow the response to be wrapped in a JSON function, making it easier to embed the content in web pages.
+
+### Example Usage
+
+Here are some example requests to the API:
+
+*   `GET /users.json`: Fetches a list of all users who have signed up to the site.
+*   `GET /users/{id}.json`: Fetches information for a specific user.
+*   `GET /projects.json`: Fetches a list of all suggested projects on the site.
+*   `GET /pull_requests.json`: Fetches a list of all contributions made by users in December.
+*   `GET /pull_requests/meta.json`: Fetches information about all contributions made in the year.
+*   `GET /organisations.json`: Fetches a list of all organisations that have signed up to the site.
+*   `GET /organisations/{id}.json`: Fetches information for a specific organisation.
+
+### API Documentation
+
+The API documentation can be found at [https://24pullrequests.com/docs](https://24pullrequests.com/docs).

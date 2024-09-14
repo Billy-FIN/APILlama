@@ -1,0 +1,7 @@
+This is the README file for the Transitland Datastore, a community-run and edited timetable and map of public transit service around the world. The Transitland Datastore is a Ruby on Rails web service backed by Postgres/PostGIS, with an asynchronous Sidekiq queue backed by Resque, which runs Ruby and Python data-ingestion libraries.
+
+The README file provides information on how to use the Transitland Datastore, including the API endpoints, local instructions, configuration reference, development practices, conflation with OSM, and authentication. The documentation also mentions the changelog, contributing guidelines, and the license.
+
+The Transitland Datastore is designed to be a centralized source of data run by a community in one place, similar to the Rails app that powers the openstreetmap.org API. The data is intended to be used for a variety of purposes, such as building transit apps, websites, and other applications.
+
+The README file also mentions that the Transitland Datastore is not affiliated with GitHub, but is instead a separate project run by a community.

@@ -1,0 +1,57 @@
+Here is a possible response:
+
+{
+  "title": "Loripsum.net - The 'lorem ipsum' generator that doesn't suck",
+  "description": "Loripsum.net is a Lorem Ipsum generator that offers a range of customization options for your placeholder text. You can generate text with different lengths, add HTML elements, and even use a Prude version to censor sensitive words.",
+  "features": [
+    "Customization options for paragraph length and HTML elements",
+    "API for generating placeholder text",
+    "Prude version for censoring sensitive words",
+    "Support for various HTML elements such as links, lists, and blockquotes"
+  ],
+  "options": [
+    "Number of paragraphs: 1-100",
+    "Paragraph length: short, medium, long, very long",
+    "Add other HTML elements: links, unordered lists, ordered lists, description lists, blockquotes, code/pre, headings, bold and italic text"
+  ],
+  "api": {
+    "endpoint": "/api",
+    "parameters": [
+      {
+        "name": "n",
+        "type": "integer",
+        "description": "Number of paragraphs to generate"
+      },
+      {
+        "name": "l",
+        "type": "string",
+        "description": "Paragraph length: short, medium, long, very long"
+      },
+      {
+        "name": "d",
+        "type": "boolean",
+        "description": "Add other HTML elements"
+      },
+      {
+        "name": "e",
+        "type": "string",
+        "description": "Type of HTML element to add"
+      },
+      {
+        "name": "u",
+        "type": "boolean",
+        "description": "Use ALL CAPS"
+      },
+      {
+        "name": "p",
+        "type": "boolean",
+        "description": "Prude version"
+      },
+      {
+        "name": "t",
+        "type": "boolean",
+        "description": "Return plain text, no HTML"
+      }
+    ]
+  }
+}

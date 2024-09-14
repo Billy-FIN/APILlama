@@ -1,0 +1,10 @@
+The json2jsonp.com service is a web service that converts JSON to JSONP (JSON with padding) for cross-domain data requests. Here's a summary of its key features:
+
+*   **JSON to JSONP Conversion**: The service takes a JSON URL and converts it to JSONP, making it easier to use in cross-domain requests.
+*   **Content Type**: The service serves requests as "application/javascript" for better compatibility.
+*   **Caching**: The service caches responses for 4 hours to improve performance.
+*   **Parameters**: The service requires two parameters: the URL of the JSON data and the callback function name.
+*   **Example Usage**: The example provided shows how to use the service via JavaScript, including how to properly pass the JSON URL to the "encodeURIComponent" function.
+*   **Bookmarklet**: A bookmarklet is available for quick JSON to JSONP conversions.
+
+The service is owned by JoomlaWorks, and the copyright information is provided at the bottom of the page.

@@ -1,0 +1,31 @@
+{
+  "title": "Minor Planet Center API - Asterank",
+  "description": "Asterank offers a database API for the Minor Planet Center's MPCORB.DAT data files.",
+  "endpoints": [
+    {
+      "name": "Minor Planet Center API",
+      "description": "A simple way to quickly apply constraints to a set of over 600,000 asteroids.",
+      "method": "GET",
+      "url": "http://asterank.com/api/mpc",
+      "headers": [],
+      "required_parameters": [
+        {
+          "name": "query",
+          "type": "json",
+          "description": "The search query using MongoDB's json-formatted 'find' operation.",
+          "default": null,
+          "example": "{\"e\":{\"$lt\":0.1},\"i\":{\"$lt\":4},\"a\":{\"$lt\":1.5}"
+        }
+      ],
+      "optional_parameters": [
+        {
+          "name": "limit",
+          "type": "integer",
+          "description": "The maximum number of results to return.",
+          "default": 100,
+          "example": "10"
+        }
+      ]
+    }
+  ]
+}

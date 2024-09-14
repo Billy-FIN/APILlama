@@ -1,0 +1,23 @@
+{
+    "title": "Free Forex API",
+    "description": "Free Forex API: Get real-time foreign exchange rates for the major currency pairs.",
+    "endpoints": [
+        {
+            "name": "Get rates data",
+            "description": "Get the current rates for the specified currency pairs.",
+            "method": "GET",
+            "url": "https://www.freeforexapi.com/api/live",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "pairs",
+                    "type": "string",
+                    "description": "A comma-separated list of currency pairs. Supported pairs: EURUSD, EURGBP, GBPUSD, USDJPY, AUDUSD, USDCHF, NZDUSD, USDCAD, USDZAR",
+                    "default": null,
+                    "example": "EURUSD, USDJPY"
+                }
+            ],
+            "optional_parameters": []
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+Here is the reformatted version of the text in a more readable format:
+
+**Makeup API**
+
+**About the Makeup API**
+
+The Makeup API is a JSON-based API that provides access to a vast collection of makeup products. The API is designed to be easy to use and provides a simple and intuitive way to retrieve the data you need.
+
+**API Endpoints**
+
+The API has one endpoint:
+
+*   **Search Makeup Products**: `http://makeup-api.herokuapp.com/api/v1/products.json`
+
+**Search Parameters**
+
+The API allows you to search for products and filter them by various criteria, including brand, price, product category, tags, and more. Here are the available search parameters:
+
+*   **product_type**: string - The type of makeup being searched for (e.g. lipstick, eyeliner)
+*   **product_category**: string - Sub-category for each makeup-type (e.g. lip gloss is a category of lipstick)
+*   **product_tags**: string, list separated by commas - Options each product could be tagged with (e.g. vegan)
+*   **brand**: string - Brand of the product
+*   **price_greater_than**: number - Will return a list of products with price greater than the indicated number (exclusive)
+*   **price_less_than**: number - Will return a list of products with price less than the indicated number (exclusive)
+*   **rating_greater_than**: number - Will return a list of products with a rating more than the indicated number (exclusive)
+*   **rating_less_than**: number - Will return a list of products with a rating less than the indicated number (exclusive)
+
+**Tags**
+
+*   **Canadian**
+*   **CertClean**
+*   **Chemical Free**
+*   **Dairy Free**
+*   **EWG Verified**
+*   **EcoCert**
+*   **Fair Trade**
+*   **Gluten Free**
+*   **Hypoallergenic**
+*   **Natural**
+*   **Non-GMO**
+*   **Oil Free**
+*   **Organic**
+*   **Peanut Free Product**
+*   **Purpicks**
+*   **Silicone Free**
+*   **Sugar Free**
+*   **USDA Organic**
+*   **Vegan**
+*   **Water Free**
+*   **Cruelty Free**
+*   **Alcohol Free**
+
+**Product Types**
+
+*   **Blush**
+*   **Bronzer**
+*   **Cream**
+*   **Eyebrow**
+*   **Eyeliner**
+*   **Eyeshadow**
+*   **Foundation**
+*   **Highlighter**
+*   **Lip Liner**
+*   **Lipstick**
+*   **Lip Gloss**
+*   **Lip Stain**
+*   **Mascara**
+*   **Nail Polish**
+
+**Example Use Cases**
+
+*   To search for products by brand and type, use the `brand` and `product_type` parameters: `http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=lipstick`
+*   To search for products by category, use the `product_category` parameter: `http://makeup-api.herokuapp.com/api/v1/products.json?product_category=lip%20gloss`
+*   To search for products by tag, use the `product_tags` parameter: `http://makeup-api.herokuapp.com/api/v1/products.json?product_tags=vegan`
+
+Note: The API is hosted on Heroku and the endpoint URL may change if the API is moved to a different platform.

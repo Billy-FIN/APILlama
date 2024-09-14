@@ -1,0 +1,11 @@
+The Pokémon TCG API provides a comprehensive dataset for building applications that need access to Pokémon Trading Card Game (TCG) data. The API offers a range of features, including prices, hi-res images, and detailed search queries, making it a valuable resource for developers. The API is available through the Pokémon TCG Developer Portal, where developers can manage their accounts and access higher rate limits and no IP restrictions.
+
+Some of the features of the Pokémon TCG API include:
+
+1. Prices by TCGplayer: Get access to the latest prices for cards, sets, and boosters.
+2. Hi-Res Images: Obtain high-resolution images of cards, sets, and other TCG assets.
+3. Detailed Search Queries: Perform advanced search queries using Lucene-like syntax to find cards by name, type, release date, legality, and more.
+4. Developer SDKs: Access various SDKs that contribute to the project, making development easier for you and your team.
+5. In-depth details of every card: Get access to detailed information about each card, including types, attacks, and more.
+
+To get started with the Pokémon TCG API, you can visit the Pokémon TCG Developer Portal to create an account and access the API. If you have any questions or need higher rate limits, you can contact Andrew via email at [email protected].

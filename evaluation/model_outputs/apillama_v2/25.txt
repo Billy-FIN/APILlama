@@ -1,0 +1,54 @@
+"Authentication" is the process of verifying the identity of a user, typically for the purpose of granting access to a system, network, or application. In the context of the BALLDONTLIE API, authentication is used to verify the identity of the API client (usually a program or script) and grant it access to the API.
+
+The BALLDONTLIE API uses API keys to authenticate API clients. An API key is a unique string that is used to identify a client and grant it access to the API. To use the BALLDONTLIE API, you must include your API key in the "Authorization" header of your API request.
+
+Here's an example of how to use an API key to authenticate with the BALLDONTLIE API:
+
+1. Obtain an API key by creating a free account on the BALLDONTLIE website.
+2. Make a GET request to the desired endpoint, including your API key in the "Authorization" header.
+
+For example, to retrieve the current team standings for the 2023-24 season, you would make a GET request to the following URL:
+
+```
+https://api.balldontlie.io/v1/standings?season=2023
+```
+
+And include your API key in the "Authorization" header:
+
+```
+Authorization: YOUR_API_KEY
+```
+
+Replace `YOUR_API_KEY` with your actual API key.
+
+The BALLDONTLIE API uses a cursor-based pagination system, which allows you to retrieve a large number of results in a single API call. The API returns a "meta" object in the response, which contains the next cursor value and the number of results per page. You can use the next cursor value to retrieve the next page of results.
+
+For example, if the API returns the following response:
+
+```
+{
+  "data": [...],
+  "meta": {
+    "next_cursor": 90,
+    "per_page": 25
+  }
+}
+```
+
+You can use the next cursor value (90) to retrieve the next page of results by making a GET request to the same endpoint, including the next cursor value in the "cursor" parameter:
+
+```
+https://api.balldontlie.io/v1/teams?cursor=90&per_page=25
+```
+
+The BALLDONTLIE API uses the following error codes:
+
+* 401: Unauthorized - You either need an API key or your account tier does not have access to the endpoint.
+* 400: Bad Request - The request is invalid. The request parameters are probably incorrect.
+* 404: Not Found - The specified resource could not be found.
+* 406: Not Acceptable - You requested a format that isn't JSON.
+* 429: Too Many Requests - You're rate limited.
+* 500: Internal Server Error - We had a problem with our server. Try again later.
+* 503: Service Unavailable - We're temporarily offline for maintenance. Please try again later.
+
+Note that the BALLDONTLIE API is subject to rate limiting, which means that you may be temporarily blocked from making requests if you exceed the allowed rate.

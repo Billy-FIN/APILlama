@@ -1,0 +1,149 @@
+{
+    "title": "Lorem Picsum",
+    "description": "Lorem Ipsum for photos",
+    "endpoints": [
+        {
+            "name": "Get a random image",
+            "description": "Get a random image by adding your desired image size (width & height) after our URL",
+            "method": "GET",
+            "url": "https://picsum.photos/{width}/{height}",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "width",
+                    "type": "integer",
+                    "description": "The desired width of the image",
+                    "default": null,
+                    "example": "200"
+                },
+                {
+                    "name": "height",
+                    "type": "integer",
+                    "description": "The desired height of the image",
+                    "default": null,
+                    "example": "300"
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "Get a specific image",
+            "description": "Get a specific image by adding /id/{image} to the start of the url",
+            "method": "GET",
+            "url": "https://picsum.photos/id/{image}/{width}/{height}",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "integer",
+                    "description": "The ID of the image",
+                    "default": null,
+                    "example": "0"
+                },
+                {
+                    "name": "width",
+                    "type": "integer",
+                    "description": "The desired width of the image",
+                    "default": null,
+                    "example": "200"
+                },
+                {
+                    "name": "height",
+                    "type": "integer",
+                    "description": "The desired height of the image",
+                    "default": null,
+                    "example": "300"
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "Get a static random image",
+            "description": "Get the same random image every time based on a seed, by adding /seed/{seed} to the start of the url",
+            "method": "GET",
+            "url": "https://picsum.photos/seed/{seed}/{width}/{height}",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "seed",
+                    "type": "string",
+                    "description": "The seed for the random image",
+                    "default": null,
+                    "example": "picsum"
+                },
+                {
+                    "name": "width",
+                    "type": "integer",
+                    "description": "The desired width of the image",
+                    "default": null,
+                    "example": "200"
+                },
+                {
+                    "name": "height",
+                    "type": "integer",
+                    "description": "The desired height of the image",
+                    "default": null,
+                    "example": "300"
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "Get a grayscale image",
+            "description": "Get a grayscale image by appending?grayscale to the end of the url",
+            "method": "GET",
+            "url": "https://picsum.photos/{width}/{height}?grayscale",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "width",
+                    "type": "integer",
+                    "description": "The desired width of the image",
+                    "default": null,
+                    "example": "200"
+                },
+                {
+                    "name": "height",
+                    "type": "integer",
+                    "description": "The desired height of the image",
+                    "default": null,
+                    "example": "300"
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "Get a blurred image",
+            "description": "Get a blurred image by appending?blur to the end of the url",
+            "method": "GET",
+            "url": "https://picsum.photos/{width}/{height}?blur",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "width",
+                    "type": "integer",
+                    "description": "The desired width of the image",
+                    "default": null,
+                    "example": "200"
+                },
+                {
+                    "name": "height",
+                    "type": "integer",
+                    "description": "The desired height of the image",
+                    "default": null,
+                    "example": "300"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "blur",
+                    "type": "integer",
+                    "description": "The amount of blur",
+                    "default": "1",
+                    "example": "2"
+                }
+            ]
+        },
+        {
+            "name": "Get a list of images",
+            "description": "Get a list of images by using the /v2/list endpoint

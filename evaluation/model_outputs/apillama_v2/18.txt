@@ -1,0 +1,107 @@
+{
+    "title": "Phone Specifications API",
+    "endpoints": [
+        {
+            "name": "List Brands",
+            "description": "List all the phone brands available in the API.",
+            "method": "GET",
+            "url": "https://api-mobilespecs.azharimm.dev/brands",
+            "headers": [],
+            "required_parameters": [],
+            "optional_parameters": []
+        },
+        {
+            "name": "List Phones",
+            "description": "List all the phones from a specific brand.",
+            "method": "GET",
+            "url": "https://api-mobilespecs.azharimm.dev/brands/{brand_slug}",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "brand_slug",
+                    "type": "string",
+                    "description": "The brand slug.",
+                    "default": null,
+                    "example": "apple"
+                }
+            ],
+            "optional_parameters": [
+                {
+                    "name": "page",
+                    "type": "integer",
+                    "description": "The page number.",
+                    "default": null,
+                    "example": "2"
+                }
+            ]
+        },
+        {
+            "name": "Phone Specifications",
+            "description": "Get the specifications of a specific phone.",
+            "method": "GET",
+            "url": "https://api-mobilespecs.azharimm.dev/brands/{brand_slug}/{phone_slug}",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "brand_slug",
+                    "type": "string",
+                    "description": "The brand slug.",
+                    "default": null,
+                    "example": "apple"
+                },
+                {
+                    "name": "phone_slug",
+                    "type": "string",
+                    "description": "The phone slug.",
+                    "default": null,
+                    "example": "iphone_12_pro_max"
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "Search",
+            "description": "Search for a phone by query.",
+            "method": "GET",
+            "url": "https://api-mobilespecs.azharimm.dev/search",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "query",
+                    "type": "string",
+                    "description": "The search query.",
+                    "default": null,
+                    "example": "iPhone 12 pro max"
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "Latest",
+            "description": "Get the latest phones.",
+            "method": "GET",
+            "url": "https://api-mobilespecs.azharimm.dev/latest",
+            "headers": [],
+            "required_parameters": [],
+            "optional_parameters": []
+        },
+        {
+            "name": "Top By Interest",
+            "description": "Get the top phones by interest.",
+            "method": "GET",
+            "url": "https://api-mobilespecs.azharimm.dev/top-by-interest",
+            "headers": [],
+            "required_parameters": [],
+            "optional_parameters": []
+        },
+        {
+            "name": "Top By Fans",
+            "description": "Get the top phones by fans.",
+            "method": "GET",
+            "url": "https://api-mobilespecs.azharimm.dev/top-by-fans",
+            "headers": [],
+            "required_parameters": [],
+            "optional_parameters": []
+        }
+    ]
+}

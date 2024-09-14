@@ -1,0 +1,14 @@
+The US Presidential Election API by TogaTech is a free backend API that provides data on the current US presidential election. The API is available for use in backend systems, but it requires a credit to use it. The API is not suitable for direct use in client-side applications, as it does not have an 'Access-Control-Allow-Origin' header.
+
+To use the API, you will need to send a GET request to the base URL, which is https://uselection.togatech.org/api, and include the desired endpoint in the URL. For example, to get the current election data, you would send a GET request to https://uselection.togatech.org/api/data.
+
+The API provides several endpoints, including:
+
+1. /data: Returns the current election data, including the candidates and their votes.
+2. /metadata: Returns metadata about the election, including the parties and their colors.
+3. /parties: Returns a list of the parties in the election.
+4. /votes: Returns the current votes for each party.
+
+The API uses JSON as its response format, and the data is parsed and stored in the `data` variable in the examples provided.
+
+It is essential to note that the API has a limit on the number of requests that can be made within a 30-second window to prevent abuse and ensure fair use. If you need higher rate limits, you can contact Andrew via email at [email protected].

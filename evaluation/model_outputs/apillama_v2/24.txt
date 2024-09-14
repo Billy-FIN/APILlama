@@ -1,0 +1,56 @@
+{
+    "title": "COVID-19 Coronavirus live statistics",
+    "endpoints": [
+        {
+            "name": "List all results per country",
+            "description": "Get the full dataset of COVID-19 cases per country.",
+            "method": "GET",
+            "url": "https://covid-19.dataflowkit.com/v1",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "Specify a country to get results for that country only. If no country is specified, the full dataset will be returned.",
+                    "default": null,
+                    "example": "spain"
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "Summary results for the whole world",
+            "description": "Get a summary of COVID-19 cases for the whole world.",
+            "method": "GET",
+            "url": "https://covid-19.dataflowkit.com/v1/world",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "Specify \"world\" to get summary results for the whole world.",
+                    "default": "world",
+                    "example": "world"
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "COVID-19 cases for a specific country",
+            "description": "Get COVID-19 cases for a specific country.",
+            "method": "GET",
+            "url": "https://covid-19.dataflowkit.com/v1/{country}",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "country",
+                    "type": "string",
+                    "description": "Specify the country for which you want to get the COVID-19 cases.",
+                    "default": null,
+                    "example": "usa"
+                }
+            ],
+            "optional_parameters": []
+        }
+    ]
+}

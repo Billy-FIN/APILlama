@@ -1,0 +1,14 @@
+
+
+{
+    "name": "Placebear",
+    "description": "A quick and simple service for getting pictures of bears for use as placeholders in your designs or code.",
+    "url": "https://placebear.com/",
+    "features": [
+        "get pictures of bears",
+        "use as placeholders in your designs or code",
+        "easy to use",
+        "add.jpg to the end of the URL if you like"
+    ],
+    "example": "https://placebear.com/200/300 or https://placebear.com/g/200/300"
+}

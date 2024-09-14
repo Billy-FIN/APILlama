@@ -1,0 +1,146 @@
+{
+    "status": "success",
+    "base": {
+        "keyword": "",
+        "hex": {
+            "value": "#67bb7ad5",
+            "composition": {
+                "red": "67",
+                "green": "bb",
+                "blue": "7a",
+                "alpha": "d5"
+            }
+        },
+        "rgba": {
+            "value": "rgba(103, 187, 122, 0.84)",
+            "composition": {
+                "red": 103,
+                "green": 187,
+                "blue": 122,
+                "alpha": 0.83529
+            }
+        },
+        "hsla": {
+            "value": "hsla(134, 38%, 57%, 0.84)",
+            "composition": {
+                "hue": 134,
+                "saturation": 38,
+                "lightness": 57,
+                "alpha": 0.83529
+            }
+        },
+        "hsla_raw": {
+            "value": "hsla(133.57143, 38.18182%, 56.86275%, 0.84)",
+            "composition": {
+                "hue": 133.57143,
+                "saturation": 38.18182,
+                "lightness": 56.86275,
+                "alpha": 0.83529
+            }
+        }
+    },
+    "base_without_alpha": {
+        "keyword": "",
+        "hex": {
+            "value": "#67bb7a",
+            "composition": {
+                "red": "67",
+                "green": "bb",
+                "blue": "7a"
+            }
+        },
+        "rgb": {
+            "value": "rgb(103, 187, 122)",
+            "composition": {
+                "red": 103,
+                "green": 187,
+                "blue": 122
+            }
+        },
+        "hsl": {
+            "value": "hsl(134, 38%, 57%)",
+            "composition": {
+                "hue": 134,
+                "saturation": 38,
+                "lightness": 57
+            }
+        },
+        "hsl_raw": {
+            "value": "hsl(133.57143, 38.18182%, 56.86275%)",
+            "composition": {
+                "hue": 133.57143,
+                "saturation": 38.18182,
+                "lightness": 56.86275
+            }
+        }
+    },
+    "base_without_alpha_contrasted_text": {
+        "keyword": "black",
+        "hex": {
+            "value": "#000000",
+            "composition": {
+                "red": "00",
+                "green": "00",
+                "blue": "00"
+            }
+        },
+        "rgb": {
+            "value": "rgb(0, 0, 0)",
+            "composition": {
+                "red": 0,
+                "green": 0,
+                "blue": 0
+            }
+        },
+        "hsl": {
+            "value": "hsl(0, 0%, 0%)",
+            "composition": {
+                "hue": 0,
+                "saturation": 0,
+                "lightness": 0
+            }
+        },
+        "hsl_raw": {
+            "value": "hsl(0, 0%, 0%)",
+            "composition": {
+                "hue": 0,
+                "saturation": 0,
+                "lightness": 0
+            }
+        }
+    },
+    "complementary": {
+        "keyword": "",
+        "hex": {
+            "value": "#984485d5",
+            "composition": {
+                "red": "98",
+                "green": "44",
+                "blue": "85",
+                "alpha": "d5"
+            }
+        },
+        "rgba": {
+            "value": "rgba(152, 68, 133, 0.84)",
+            "composition": {
+                "red": 152,
+                "green": 68,
+                "blue": 133,
+                "alpha": 0.83529
+            }
+        },
+        "hsla": {
+            "value": "hsla(314, 38%, 43%, 0.84)",
+            "composition": {
+                "hue": 314,
+                "saturation": 38,
+                "lightness": 43,
+                "alpha": 0.83529
+            }
+        },
+        "hsla_raw": {
+            "value": "hsla(313.57143, 38.18182%, 43.13725%, 0.84)",
+            "composition": {
+                "hue": 313.57143,
+                "saturation": 38.18182,
+                "lightness

@@ -1,0 +1,79 @@
+{
+    "title": "Football Standings API",
+    "endpoints": [
+        {
+            "name": "All Leagues Available",
+            "description": "Get a list of all leagues available on the API",
+            "method": "GET",
+            "url": "https://api-football-standings.azharimm.site/leagues",
+            "headers": [],
+            "required_parameters": [],
+            "optional_parameters": []
+        },
+        {
+            "name": "League Detail",
+            "description": "Get detailed information about a specific league",
+            "method": "GET",
+            "url": "https://api-football-standings.azharimm.site/leagues/{id}",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The ID of the league",
+                    "default": null,
+                    "example": "eng.1"
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "Seasons Available",
+            "description": "Get a list of available seasons for a specific league",
+            "method": "GET",
+            "url": "https://api-football-standings.azharimm.site/leagues/{id}/seasons",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The ID of the league",
+                    "default": null,
+                    "example": "eng.1"
+                }
+            ],
+            "optional_parameters": []
+        },
+        {
+            "name": "Standings",
+            "description": "Get the standings for a specific league and season",
+            "method": "GET",
+            "url": "https://api-football-standings.azharimm.site/leagues/{id}/standings",
+            "headers": [],
+            "required_parameters": [
+                {
+                    "name": "id",
+                    "type": "string",
+                    "description": "The ID of the league",
+                    "default": null,
+                    "example": "eng.1"
+                },
+                {
+                    "name": "season",
+                    "type": "integer",
+                    "description": "The season for which to get the standings",
+                    "default": null,
+                    "example": "2020"
+                },
+                {
+                    "name": "sort",
+                    "type": "string",
+                    "description": "The order in which to sort the standings (asc or desc)",
+                    "default": null,
+                    "example": "asc"
+                }
+            ],
+            "optional_parameters": []
+        }
+    ]
+}

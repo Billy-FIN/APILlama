@@ -1,0 +1,37 @@
+Here is the information about the movie-quote API:
+
+**Movie Quote API**
+
+*   **Description:** An API developed with Django rest framework, serves movie and series quotes.
+*   **License:** GPL-3.0 license
+*   **Stars:** 26
+*   **Forks:** 5
+*   **Branches:** main
+*   **Tags:** movie, quote, series, API, Django, rest, framework
+*   **Language:** Python (93.6%), HTML (4.6%), Other (1.8%)
+*   **Deployed on:** Heroku
+
+**Endpoints:**
+
+*   **GET /v1/quote/**: Get a random quote each time, from all quotes.
+*   **GET /v1/quote?censored**: Don't show quotes which contain adult language.
+*   **GET /v1/shows/<show_slug>**: Get a random quote from the desired show.
+*   **GET /v1/shows/**: Get list of available shows slugs.
+
+**Usage:**
+
+*   Clone the repository and run the API locally using `python manage.py runserver`.
+*   Use the following paths to get the quotes:
+	+ `https://movie-quote-api.herokuapp.com/v1/quote/`
+	+ `https://movie-quote-api.herokuapp.com/v1/quote?censored`
+	+ `https://movie-quote-api.herokuapp.com/v1/shows/<show_slug>`
+	+ `https://movie-quote-api.herokuapp.com/v1/shows/`
+
+**Development:**
+
+*   Fork and contribute to the repository to make it better.
+*   Open issues or pull requests to suggest improvements.
+
+**Deployment:**
+
+*   The main branch of this repository will automatically deploy on Heroku.

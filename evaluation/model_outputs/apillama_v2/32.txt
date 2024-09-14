@@ -1,0 +1,86 @@
+{
+  "title": "Summon a random meme at will",
+  "description": "Summon a random meme at will",
+  "endpoint": "/gimme",
+  "parameters": [
+    {
+      "name": "count",
+      "type": "integer",
+      "description": "Specify the number of memes to return (max 50)",
+      "default": "1"
+    }
+  ],
+  "response": {
+    "type": "object",
+    "description": "The response from the API",
+    "properties": [
+      {
+        "name": "postLink",
+        "type": "string",
+        "description": "The link to the original post on Reddit"
+      },
+      {
+        "name": "subreddit",
+        "type": "string",
+        "description": "The subreddit the meme was posted on"
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "description": "The title of the meme"
+      },
+      {
+        "name": "url",
+        "type": "string",
+        "description": "The URL of the meme image"
+      },
+      {
+        "name": "nsfw",
+        "type": "boolean",
+        "description": "Whether the meme is NSFW"
+      },
+      {
+        "name": "spoiler",
+        "type": "boolean",
+        "description": "Whether the meme is a spoiler"
+      },
+      {
+        "name": "author",
+        "type": "string",
+        "description": "The author of the meme"
+      },
+      {
+        "name": "ups",
+        "type": "integer",
+        "description": "The number of upvotes the meme has received"
+      },
+      {
+        "name": "preview",
+        "type": "array",
+        "description": "The preview images of the meme in different sizes",
+        "properties": [
+          {
+            "name": "width",
+            "type": "integer",
+            "description": "The width of the image"
+          },
+          {
+            "name": "crop",
+            "type": "string",
+            "description": "The crop of the image"
+          },
+          {
+            "name": "auto",
+            "type": "string",
+            "description": "Whether to automatically convert the image format"
+          },
+          {
+            "name": "s",
+            "type": "string",
+            "description": "The URL of the image"
+          }
+        ]
+      }
+    ]
+  }
+}

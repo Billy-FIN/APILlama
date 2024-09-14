@@ -1,0 +1,120 @@
+
+
+# Colormind API Documentation
+
+## Overview
+
+Colormind is a color palette generator that uses AI to create a palette based on an input image or video. The API allows you to access all the features that you see on Colormind.io.
+
+## API Endpoints
+
+### Search for a Random Palette
+
+*   **GET /**
+
+    Returns a random color palette.
+
+### Search for a Palette with Input
+
+*   **POST /**
+
+    Search for a color palette based on an input image or video.
+
+### List Available Models
+
+*   **GET /list**
+
+    Returns a list of available models.
+
+## API Request
+
+To use the API, send a POST request to `http://colormind.io/api/` with the following JSON payload:
+
+```json
+{
+  "model": "default",
+  "input": [
+    [44, 43, 44],
+    [90, 83, 82],
+    "N",
+    "N",
+    "N"
+  ]
+}
+```
+
+## Response
+
+The API returns a JSON response with a list of colors in the format:
+
+```json
+{
+  "result": [
+    [214, 78, 69],
+    [247, 242, 163],
+    [201, 216, 147],
+    [57, 141, 112],
+    [62, 80, 64]
+  ]
+}
+```
+
+## Models
+
+The API supports the following models:
+
+*   **default**: The default model.
+*   **ui**: A model designed for user interface applications.
+*   **makoto_shinkai**: A model inspired by the art style of Makoto Shinkai.
+*   **metroid_fusion**: A model inspired by the art style of Metroid Fusion.
+*   **akira_film**: A model inspired by the art style of Akira Film.
+*   **flower_photography**: A model inspired by the art style of Flower Photography.
+
+## Availability
+
+The models are refreshed every day at +8 UTC (midnight PDT). The service will be down for 30 seconds while the new models are loaded into memory.
+
+## Example Usage
+
+You can use the API in JavaScript like this:
+
+```javascript
+var url = "http://colormind.io/api/";
+var data = {
+  model: "default",
+  input: [[44, 43, 44], [90, 83, 82], "N", "N", "N"]
+};
+
+var http = new XMLHttpRequest();
+
+http.onreadystatechange = function() {
+  if (http.readyState == 4 && http.status == 200) {
+    var palette = JSON.parse(http.responseText).result;
+  }
+};
+
+http.open("POST", url, true);
+http.send(JSON.stringify(data));
+```
+
+## API Key
+
+To get a random color palette, use the following endpoint:
+
+```bash
+curl 'http://colormind.io/api/' --data-binary '{"model":"default"}'
+```
+
+To get color suggestions with input, label blank fields with the "N" character:
+
+```bash
+curl 'http://colormind.io/api/' --data-binary '{"input":[[44,43,44],[90,83,82],"N","N","N"],"model":"default"}'
+```
+
+## Getting Started
+
+To get started with the Colormind API, create an account and get an API key by emailing [jack@colormind.io](mailto:jack@colormind.io).
+
+## Contact
+
+If you have any questions or need further assistance, contact me directly at [jack@colormind.io](mailto:jack@colormind.io).
